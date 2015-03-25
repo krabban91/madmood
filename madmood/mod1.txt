@@ -97,3 +97,13 @@ lg_k (t)
 
 0.85
 
+
+3.
+Vi bortser från tjockleken på snöret och luftmotstånd. Ser bara till längden på pendeln och tyngden längst ut.
+
+apple lång 45 10 pendls : 17,73.
+Android lång 45 10 pendls : 17,25.
+apple lång 35 10 pendls : 17,16.
+apple kort 45 10 pendls : 12,55.
+apple kort 25 10 pendls : 12,23.
+

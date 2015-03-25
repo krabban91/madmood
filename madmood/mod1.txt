@@ -48,3 +48,52 @@ Kvadreringsregel.
 
 Ju längre kabel desto längre sträcka för strömmen att färdas och mer bortfall som följd.
 Ju högre ström desto mer värmeutvekling i kabeln. Ökar man kabelarean så sänks resistansen -> mindre värmeutveckling och mindre spillenergi.
+
+air drag force:
+
+weight = C* length^3 (C is different depending on type of object (dog, human, car)):
+
+
+p(krona) = 1/2
+Innebär att eftersom det är lika stor sannorlikhet att få krona eller klave och att p(högkant)= 0
+p(fall0)+p(fall1)+...+p(falln) = 1
+
+
+
+2. 
+Suggest a suitable equation for graph points.
+{{88.0, 57.9},{224.7,108.2},{365.3,149.6},{687.0,228.07},{4332, 778.434},{10760, 1428.74},{30684,2839.08},{60188,4490.8},{90467,5879.13}} 
+
+f(88.0) = 57.9
+f(224.7) = 108.2
+
+
+
+
+-- positionsförändring mellan tidpunkter
+f((88.0+224.7)/2) = dy/dx = (108.2-57.9)/(224.7-88.0) = 503/1367 ("0.3679590343818580833942940746159473299195318215069495...")
+f((88.0+365.3)/2) = (149.6-57.9)/(365.3-88.0) = "917/2773" ("0.3306887847097006851785070320952037504507753335737468...")
+
+
+
+-- hastighet
+h = s/t
+h1 = 57.9/88 		= 0.66
+h2 = 108.2/224.7 	= 0.48
+H3 = 149.6/365.3 	= 0.41
+
+-- hastighetsförändring
+f(ddy/dx)=
+-- Hastighetsförändring mellan två tidpunkter
+(0.48 - 0.66 )/ (108.2-57.9) = -0.00358
+(0.41 - 0.48)/ (149.6 - 108.2) = -0.001691
+
+
+C * k^(t)
+
+lg_k (t)
+
+
+
+0.85
+

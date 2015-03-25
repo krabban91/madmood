@@ -103,7 +103,17 @@ Vi bortser från tjockleken på snöret och luftmotstånd. Ser bara till längde
 
 apple lång 45 10 pendls : 17,73.
 Android lång 45 10 pendls : 17,25.
-apple lång 35 10 pendls : 17,16.
-apple kort 45 10 pendls : 12,55.
-apple kort 25 10 pendls : 12,23.
-
+apple lång 25 10 pendls : 17,16.
+apple kort 45 10 pendls : 12,05.
+apple kort 25 10 pendls : 11,83.
+apple kortkort 45 10 pendls : 8.04.
+apple kortkortkort 45 10 pendls : 5.64.
+apple långlång 45 10 pendls : 24.58.
+Det känns som att vinkeln inte spelar roll
+-..-			  Tyngden -..-
+MEN. Längd på "snöret" spelar roll. Kortare snöre snabbare period.
+lång*2: 2.46s/period
+lång: 1.75s/period 
+lång/2: 1.20s/period
+lång/4: 0.80s/period
+lång/8: 0.56s/period

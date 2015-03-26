@@ -98,6 +98,18 @@ lg_k (t)
 0.85
 
 
+
+
+det var ju dumt av oss. 
+{[{t,d}]}
+{{88.0, 57.9},{224.7,108.2},{365.3,149.6},{687.0,228.07},{4332, 778.434},{10760, 1428.74},{30684,2839.08},{60188,4490.8},{90467,5879.13}} 
+
+Den här beror sträckan på tiden. Med andra ord. sträckan kan bero på hastigheten istället.
+{[{t,d}]}
+{{57.9,88.0},{108.2,224.7},{149.6,365.3},{228.07,687.0},{778.434,4332},{1428.74,10760},{2839.08,30684},{4490.8,60188},{5879.13,90467}} 
+
+
+
 3.
 Vi bortser från tjockleken på snöret och luftmotstånd. Ser bara till längden på pendeln och tyngden längst ut.
 

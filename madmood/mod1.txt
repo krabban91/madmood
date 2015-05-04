@@ -109,6 +109,21 @@ Den här beror sträckan på tiden. Med andra ord. sträckan kan bero på hastig
 {{57.9,88.0},{108.2,224.7},{149.6,365.3},{228.07,687.0},{778.434,4332},{1428.74,10760},{2839.08,30684},{4490.8,60188},{5879.13,90467}} 
 
 
+KAboom! Vi fick för oss att ville vända på allt och ha tiden beroende på sträckan istället. 
+
+Efter massa flum så kom vi fram till att det kan vara en brömssträcka. och formeln för denna är något i stil med (v^2)*k
+Konstanten är för oss okänd, men vi provade uss fram med massa värden och fick ett hyffsat värde. Men vi insåg snabbt att vi vänt på tid och distans igen, byter och får samma sketna graf som vi fick innan vi skiftade alla värden.
+
+Men då vi fortsatte att prova oss fram med konstanter och med bytt plats på d och t så kom vi fram till en konstant på 24,892 som verkar ge en väldigt lika kurva!
+
+Sqrt[(t^3)/24.829], {t, 0, 5879.13}
+CubeRoot[d^2*24.829], {d, 0, 90467}
+
+Denna formeln fungerar inte HELT perfekt, men ligger väldigt nära.
+
+{{88.0, 57.718}, {224.7, 107.826}, {365.3, 149.08}, {687.0,227.139}, {4332, 775.256}, {10760, 1421.87}, {30684,2859.31}, {60188, 4480.5}, {90467, 5879.13}}
+{{88.0, 57.9}, {224.7, 108.2}, {365.3, 149.6}, {687.0, 228.07}, {4332,778.434}, {10760, 1428.74}, {30684, 2839.08}, {60188,4490.8}, {90467, 5879.13}}
+
 
 3.
 Vi bortser från tjockleken på snöret och luftmotstånd. Ser bara till längden på pendeln och tyngden längst ut.
@@ -128,4 +143,30 @@ lång*2: 2.46s/period
 lång: 1.75s/period 
 lång/2: 1.20s/period
 lång/4: 0.80s/period
-lång/8: 0.56s/period
+lång/8: 0.56s/perio
+
+
+
+
+4. 
+Ekvationssystem:
+ax^2+bx+c = f(x)
+
+f(1) = a*1+b*1+c   = 3
+f(2) = a*2^2+b*2+c = 2
+f(3) = a*3^2+b*3+c = 4
+
+r1 : f(2)-f(1) = (4a+2b+c) - (a+b+c) => -1 = 3a+b 
+f(3) - 3*r1 = (a*3^2+b*3+c) - (a*9+b*3) => 7 = c
+r2: F(1) - c : a+b+c -c => a+b = 3-7 = -4
+r1 - r2 : (3a+b) - (a+b) = 2a = 3
+a = 1,5
+f(1) - a - c = b = 3 - 1,5 - 7 = -5,5
+
+a= 1,5
+b= -5,5
+c= 7
+
+
+
+

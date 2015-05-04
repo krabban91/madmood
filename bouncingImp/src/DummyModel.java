@@ -13,8 +13,8 @@ public class DummyModel implements IBouncingBallsModel {
 
         //balls.add(new Ball(width/2,height/2,2,2,1));
         //balls.add(new Ball(2.7,2.7,-2,2,1));
-        balls.add(new Ball(2,2,0,0,1));
-        balls.add(new Ball(2,6,0,1,1));
+        balls.add(new Ball(2,2,2,0,1));
+        balls.add(new Ball(3,7,0,1,1));
 	}
 
 	@Override

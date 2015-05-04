@@ -10,17 +10,19 @@ public class DummyModel implements IBouncingBallsModel {
 	public DummyModel(double width, double height) {
         Ball.areaWidth = width;
         Ball.areaHeight = height;
-
+//        balls.add(new Ball(3,7,0,1,0.5));
+//        balls.add(new Ball(3,2,0,1,1));
         balls.add(new Ball(width/2,height/2,2,2,1));
-        balls.add(new Ball(2.7,2.7,-2,2,1));
+        balls.add(new Ball(width-1,height-1,-2,2,1));
         balls.add(new Ball(2,2,2,0,1));
         balls.add(new Ball(3,7,0,1,1));
 		balls.add(new Ball(width/3,height/3,3,6,2));
-		balls.add(new Ball(6.7,2.7,-2,2,0.5));
+		//balls.add(new Ball(6.7,2.7,-2,2,0.5));
 	}
 
 	@Override
 	public void tick(double deltaT) {
+        Ball.resetCollisions();
         for(Ball b : balls){
             LinkedList<Ball> collidingBalls = new LinkedList<Ball>();
             for(Ball o : balls){
@@ -29,6 +31,9 @@ public class DummyModel implements IBouncingBallsModel {
                 }
             }
             b.tick(deltaT, collidingBalls);
+        }
+        for(Ball b : balls){
+           // b.collided = false;
         }
     }
 
@@ -42,7 +47,7 @@ public class DummyModel implements IBouncingBallsModel {
 		return myBalls;
 	}
 
-    private boolean colliding(Ball fst, Ball snd){
+    public static boolean colliding(Ball fst, Ball snd){
         double x = Math.abs(fst.x - snd.x);
         double y = Math.abs(fst.y - snd.y);
         double dist = Math.sqrt(x*x + y*y);

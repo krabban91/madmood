@@ -1,0 +1,46 @@
+PROBLEM
+steg ett: modellval (funktionens form)
+steg två: försöka sig på att sätta in siffror i funktionen, parametervärden
+
+exponentiell: 2^x 
+polonymiell: x^2
+
+ökningen som sker är proportionell mot aktuell befolkning (exponentiell)
+
+Strunta i ena kolumnen, se istället till en av kolumnerna, testa (P(n)+1)-(P(n))
+
+Kursen är organiserad efter modelltyper:
+vecka 1: Functions and equations.
+vecka 2: Optimization models.
+vecka ?: Dynamic models ~= differential equations.
+Inga regler finns till vad man ska välja, välj den som passar bäst till problemet lixom.
+
+Välja enkla modeller eller mer komplicerade modeller som beskriver väldigt bra.
+Tänk igenom och väg vad som är viktigast.
+
+expressive power
+algorithmic power
+
+logistic growth: p(t) = a/(1+c(e^(-dt))) Exponentiell funktion som efter ett tag avtar.
+
+
+steps for solving problems (endast ett förslag på problemlösning):
+
+1. Understand
+2. Plan the steps
+3. Be careful (Letar efter nycklarna i soffan, fortsätter och letar i huset. letar sen i soffan igen och hittar dem.
+   hade man varit noggrann från början hade man sluppit leta i hela huset)
+4. Check results / reflect 
+
+
+Modeling process:
+
+1. Ask the question
+2. Select the modeling approach/model type
+3. Formulate the model
+4. Solve the model
+5. Answer the question
+
+Våga göra fel! gör man fel inser man att det finns en möjlighet mindre till rätt svar och man har en framgång.
+
+Bloom's taxonomy

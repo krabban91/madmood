@@ -11,10 +11,12 @@ public class DummyModel implements IBouncingBallsModel {
         Ball.areaWidth = width;
         Ball.areaHeight = height;
 
-        //balls.add(new Ball(width/2,height/2,2,2,1));
-        //balls.add(new Ball(2.7,2.7,-2,2,1));
+        balls.add(new Ball(width/2,height/2,2,2,1));
+        balls.add(new Ball(2.7,2.7,-2,2,1));
         balls.add(new Ball(2,2,2,0,1));
         balls.add(new Ball(3,7,0,1,1));
+		balls.add(new Ball(width/3,height/3,3,6,2));
+		balls.add(new Ball(6.7,2.7,-2,2,0.5));
 	}
 
 	@Override

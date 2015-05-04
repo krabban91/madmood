@@ -64,22 +64,27 @@ public class Ball {
                 b.vx = post.getX();
                 b.vy = post.getY();
 
-
-
-
-
-
                 b.collided = true;
             } else{
                 this.collided = false;
             }
         }
-        if (this.x < this.r || this.x > Ball.areaWidth - this.r) {
-            this.vx *= -1;
-        }
-        if (this.y < this.r || this.y > Ball.areaHeight - this.r) {
-            this.vy *= -1;
-        }
+
+	    if ( this.x < this.r ) {
+		    this.vx *= -1;
+		    this.x = r;
+	    } else if ( this.x > Ball.areaWidth - this.r ) {
+		    this.vx *= -1;
+		    this.x = Ball.areaWidth - this.r;
+	    }
+
+        if ( this.y < this.r ) {
+	        this.vy *= -1;
+	        this.y = r;
+        } else if ( this.y > Ball.areaHeight - this.r ) {
+		    this.vy *= -1;
+	        this.y = Ball.areaHeight - this.r;
+	    }
 
         this.x += this.vx * deltaT;
         this.y += this.vy * deltaT;

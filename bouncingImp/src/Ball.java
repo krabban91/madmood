@@ -33,24 +33,34 @@ public class Ball {
                 double hyp= Math.sqrt(dy * dy + dx * dx);
                 double angle = Math.asin(dx/hyp);
 
-                Point2D.Double pol ;//= this.rectToPolar(vx,vy);
+                Point2D.Double uThis = Ball.rectToPolar(this.vx,this.vy);
+                Point2D.Double uB = Ball.rectToPolar(b.vx,b.vy);
+
+//                Point2D.Double pol ;//= this.rectToPolar(vx,vy);
                 Point2D.Double post;// = Ball.polarToRect(pol.getX(),pol.getY());
 
-//                double mThis = 4*Math.PI*Math.pow(this.r,3)/3;
-//                double mb = 4*Math.PI*Math.pow(b.r,3)/3;
-                //double I = mThis*this.vsomething;
-//                double R;
-
-
+                double mThis = 4*Math.PI*Math.pow(this.r,3)/3;
+                double mb = 4*Math.PI*Math.pow(b.r,3)/3;
+                double I = -mThis*uThis.getX() + mb*uB.getX();
+                double R = -(uB.getX() +uThis.getX());
+//                double vB = Math.sq
+                // mThis*vThis + mB(vThis + R) = I
+                // mThis*vThis + mB*vThis + mB*R = I
+                // vThis = (I-mB*R)/(mthis+mB)
+                // vB = R+vThis
+                double vThis = (I-mb*R)/(mThis+mb);
+                double vB = R+vThis;
                 //derping
 
-                pol = Ball.rectToPolar(this.vx, this.vy);
-                post = Ball.polarToRect(pol.getX(), (pol.getY() + Math.PI - 2*angle));
+//                pol = Ball.rectToPolar(this.vx, this.vy);
+//                post = Ball.polarToRect(pol.getX(), (pol.getY() + Math.PI - 2*angle));
+                post = Ball.polarToRect(vThis, (uThis.getY() + Math.PI - 2*angle));
                 this.vx = post.getX();
                 this.vy = post.getY();
 
-                pol = Ball.rectToPolar(b.vx, b.vy);
-                post = Ball.polarToRect(-pol.getX(), (pol.getY() + Math.PI  - 2*angle));
+                post = Ball.polarToRect(vB, (uB.getY() + Math.PI  - 2*angle));
+//                pol = Ball.rectToPolar(b.vx, b.vy);
+//                post = Ball.polarToRect(-pol.getX(), (pol.getY() + Math.PI  - 2*angle));
                 b.vx = post.getX();
                 b.vy = post.getY();
 

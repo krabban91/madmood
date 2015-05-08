@@ -11,11 +11,15 @@ public class DummyModel implements IBouncingBallsModel {
         Ball.areaWidth = width;
         Ball.areaHeight = height;
         //TODO: Add balls here
-        balls.add(new Ball(width/2,height/2,2,2,1));
-        balls.add(new Ball(width-1,height-1,-2,2,1));
+        balls.add(new Ball(1,1,2,2,1));
+        balls.add(new Ball(width-1,height-1,-2,2,2));
         balls.add(new Ball(2,2,2,0,1));
         balls.add(new Ball(3,7,0,1,1));
-		balls.add(new Ball(width/3,height/3,3,6,2));
+		balls.add(new Ball(width/3,height/3,3,6,1));
+//        balls.add(new Ball(5,6,1,-2,2));
+//        balls.add(new Ball(5,2,-1,0,1));
+//        balls.add(new Ball(2,1,0,0,1));
+//        balls.add(new Ball(4,1,-2,0,1));
 	}
 
     //Checks each ball if colliding with another and runs all the balls functions.

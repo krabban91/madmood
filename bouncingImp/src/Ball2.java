@@ -39,7 +39,7 @@ public class Ball2 {
 				double angle;
 				System.out.println("dx: " + dx + "    dy: " + dy + "    hyp: " + hyp);
 				angle = Math.atan2(dy, dx);
-				System.out.println("angle = " + angle + "      b.vx,b.vy" + b.vx + "  " +b.vy + " llooool  :   " + Math.sqrt(b.vx*b.vx+b.vy+b.vy) + "");
+				System.out.println("angle = " + angle);
 
 				double mThis = 4*Math.PI*Math.pow(this.r,3)/3;
 				double mb = 4*Math.PI*Math.pow(b.r,3)/3;
@@ -80,18 +80,18 @@ public class Ball2 {
 		}
 
 		if ( this.x < this.r ) {
-			this.vx *= -0.98;
+			this.vx *= -0.982;
 			this.x = r;
 		} else if ( this.x > Ball2.areaWidth - this.r ) {
-			this.vx *= -0.98;
+			this.vx *= -0.982;
 			this.x = Ball2.areaWidth - this.r;
 		}
 
 		if ( this.y < this.r ) {
-			this.vy *= -0.98;
+			this.vy *= -0.982;
 			this.y = r;
 		} else if ( this.y > Ball2.areaHeight - this.r ) {
-			this.vy *= -0.98;
+			this.vy *= -0.982;
 			this.y = Ball2.areaHeight - this.r;
 		}
 
